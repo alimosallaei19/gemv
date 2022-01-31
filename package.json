@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/alimosallaei19/shp/issues"
   },
-  "homepage": "https://github.com/alimosallaei19/shp#readme"
+  "homepage": "https://github.com/alimosallaei19/shp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "node-fetch": "^2.5.3"
+  }
 }
