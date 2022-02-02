@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "grunt & node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,13 @@
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "grunt-cli": "^1.4.3",
     "node-fetch": "^2.5.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-obfuscator": "^8.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "javascript-obfuscator": "^3.1.0"
   }
 }
