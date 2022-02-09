@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         obfuscator: {
             options: {
-                banner: '// SHP, a service of DeltaLabs.\n',
+                banner: '// This project was made possible by theorize.world.\n',
                 debugProtection: true,
                 debugProtectionInterval: true
             },

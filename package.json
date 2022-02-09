@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "grunt & node index.js"
+    "start": "grunt & npm run start:css & node index.js",
+    "start:css": "postcss styles/tailwind.css -o public/styles/tailwind-style.css & postcss styles/mine.css -o public/styles/mine.css"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,15 @@
   },
   "homepage": "https://github.com/alimosallaei19/shp#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "grunt-cli": "^1.4.3",
-    "node-fetch": "^2.5.3"
+    "node-fetch": "^2.5.3",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.18"
   },
   "devDependencies": {
     "grunt": "^1.4.1",
